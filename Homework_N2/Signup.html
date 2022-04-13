@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Sign up</title>
+        <style>
+             body{
+                background-color: antiquewhite;
+            }
+            main{
+                margin: auto;
+                line-height: 1.5;
+                letter-spacing: .8px;
+                background-color: whitesmoke;
+                font-size: 150%;
+                text-align: center;
+                border: 2px double brown;
+                padding: 10px;
+                width: 350px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h2>Sign up with email</h2>
+            <label for="email">Email address:</label><br>
+            <input type="text" name="Email address" id="email"><br>
+            <label for="firstname">First name:</label><br>
+            <input type="text" name="First name" id ="first name"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" name="Last name" id = "Last name"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password"><br>
+            <label for="date">Date of birth:</label><br>
+            <input type = "date" id="birthday" name="birthday"><br>
+            Interested in:
+                <form>
+                <input type="radio" id="womenswear" name="interested" value="Womenswear">
+                <label for="womenswear">Womenswear</label>
+                <input type="radio" id="menswear" name="interested" value="menswear">
+                <label for="menswear">Menswear</label><br>
+                </form>
+            <input type="button" value="Submit"><br>
+            or <a href="./Login.html">Sign in</a>
+            </main>
+    </body>
+</html>

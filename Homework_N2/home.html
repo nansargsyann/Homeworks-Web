@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Second Hand</title>
+        <style>
+            body {
+                width: fit-content;
+                height: 100%;
+                background-color: antiquewhite;
+            }
+            header {
+                background-color: whitesmoke;
+                color: brown;
+                padding: 6px;
+                border: 2px double brown;
+            }
+            details{
+                font-size: 80%;
+            }
+            footer {
+                background-color: whitesmoke;
+                color: brown;
+                padding: 6px;
+                font-size: 50%;
+                border: 2px double brown;
+            } 
+            figcaption{
+                font-size: 80%;
+            }
+            .dress1, .shirt1, .bottom1, .coats{
+                text-align: center;
+                border: 2px double brown;
+                padding: 10px;
+                width: 150px;
+            }
+            .help, .find-us, .app{
+                text-align: left;
+            }
+            .pay, .contacts, .news, .right{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class = "left"><img src="./images/logo_circle.png" alt="Second Hand Logo" width = "100px"><br>
+                <a href="women.html">Women</a> |
+                <a href="men.html">Men</a> |
+                <a href="sale.html">Sale</a> | </div>
+                <div class = "right">
+                    <a href = "#" target = "_blank"><img src = "images/Icons/home.png" alt = "Home" width = "30px"></a>
+                    <a href = "Login.html" target = "_blank"><img src = "./images/Icons/signin.png" alt = "Login" width="30px"></a>
+                    <a href="Favourites.html"><img src="./images/Icons/favourites.png" alt="Favourites" width="30px"></a>
+                    <a href="Cart.html"><img src="./images/Icons/cart.png" alt="Shopping cart" width="30px"></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <hr><details>
+                <summary><i>For new users only</i></summary>
+                <p>
+                    Register & enjoy 10% off on your first order<br>
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="button" value = "Subscribe">
+                </p>
+            </details><hr>
+            <figure class = "dress1">
+                <img src="./images/Dresses/dress_1.jpeg" alt="V-Neck Babydoll Mini Dress" width="80px">
+                <figcaption><a href = "#">V-Neck Babydoll Mini Dress</a><br>70$</figcaption>
+
+            </figure>
+            <figure class = "shirt1">
+                <img src="./images/Dresses/shirt1.jpeg" alt="Oversized Poplin Button-Up Shirt" width="100px">
+                <figcaption><a href="#">Oversized Poplin Button-Up Shirt</a><br>70$</figcaption>
+            </figure>
+
+            <figure class = "bottom1">
+                <img src="./images/Dresses/bottom1.jpeg" alt="Ultra High Rise Slim Straight Jeans" width="80px">
+                <figcaption><a href = "#">Ultra High Rise Slim Straight Jeans</a><br>89$</figcaption>
+            </figure>
+            <figure class = "coats">
+                <img src="./images/Dresses/coat.jpeg" alt="Ultra Long Puffer" width="80px">
+                <figcaption><a href="#">Ultra Long Puffer</a><br>220$</figcaption>
+            </figure>
+        </main>
+
+        <footer>
+            <section class = "help">
+                HELP AND INFORMATION<br>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Track order</a></li>
+                    <li><a href="#">Delivery & returns</a></li>
+                </ul>
+            </section>
+            <div class = "find-us">
+                FIND US ON<br>
+                <a href = "https://www.facebook.com" target = "_blank"><img src="./images/Icons/facebook.png" alt="Facebook link" width="20px"></a>
+                <a href = "https://www.instagram.com" target = "_blank"><img src="./images/Icons/instagram.png" alt="Instagram Link" width="20px"></a>
+                <a href = "https://twitter.com/?lang=ru" target = "_blank"><img src="./images/Icons/twitter.png" alt="Twitter link" width="20px"></a>
+                <a href = "https://www.youtube.com" target = "_blank"><img src="./images/Icons/youtube.png" alt="Youtube Link" width="20px"></a>
+                <a href = "https://www.pinterest.com" target = "_blank"><img src="./images/Icons/pinterest.png" alt="Pinterest Link" width="20px"></a>
+            </div>
+
+            <div class = "app">
+                APP<br>
+                <a href="https://apps.apple.com/us/genre/ios/id36" target="_blank"><img src = "images/Icons/apple.png" alt = "Appstore" width="20px"></a>
+                <a href="https://play.google.com/store/apps;" target="_blank"><img src="./images/Icons/android.png" alt = "Googleplay" width="20px"></a>
+            </div>
+
+            <div class = "pay">
+                WE ACCEPT<br>
+                <img src="./images/Icons/applepay.png" alt="ApplePay" width="20px">
+                <img src="./images/Icons/paypal.png" alt="Paypal" width="20px">
+                <img src="./images/Icons/visa.png" alt="Visa" width="20px">
+            </div>
+
+            <div class = "contacts">
+                OUR CONTACTS<br>
+                <img src="./images/Icons/location.png" alt="Location" width="18px"> 21 Abovyan St, Yerevan 0009, Armenia <br>
+                <img src="./images/Icons/tel.png" alt="Telephone" width="18px"> <a href="tel:">+374 77 779032</a>
+            </div>
+
+            <div class = "news">
+                SIGN UP FOR OUR NEWS<br>
+                <input type = "email" placeholder="Your email address" > <input type = "submit" value="SUBSCRIBE">
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos hw</title>
+    <style>
+        header, main{
+            background-color:aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .videos{
+            text-align: center;
+            border: 2px double brown;
+            padding: 10px;
+            width: 250px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header><h1> Videos from trips</h1></header>
+    <main>
+        <figure class="videos">
+            <video width="200" height="300" controls>
+                <source src="./Videos/Tatev1.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N1 video, simple
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls loop>
+                <source src="./Videos/Georgia2.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N2 video, loop
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls muted>
+                <source src="./Videos/yvn.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N3 video, muted
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls poster="./Images/Georgia.JPG">
+                <source src="./Videos/Georgia2.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N4 video, poster
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls autoplay>
+                <source src="./Videos/trip2.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N5 video, autoplay
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls muted loop>
+                <source src="./Videos/Jermuk.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N6 video, muted + loop
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls muted poster="./Images/Georgia2.JPG">
+                <source src="./Videos/yvn.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N7 video, muted + poster
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" autoplay muted controls>
+                <source src="./Videos/yvn.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N8 video, muted + autoplay
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls>
+                <source src="./Videos/trip2.mp4" type="video/mp4">
+                <source src="./Videos/Georgia2.mp4" type="video/mp4">
+                Your browser doesn't support embedded videos.
+            </video>
+            <figcaption>
+                N9 video, embedded videos
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" controls >
+                <source src="./Videos/IMG_8592.avi" type="video/avi">
+                Wrong type!
+            </video>
+            <figcaption>
+                N10 video, Wrong type!
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300">
+                <source src="./Videos/Tatev1.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N11 video, without controls
+            </figcaption>
+        </figure>
+        <figure class="videos">
+            <video width="200" height="300" preload="none">
+                <source src="./Videos/trip2.mp4" type="video/mp4">
+            </video>
+            <figcaption>
+                N12 video, preload none
+            </figcaption>
+        </figure>
+    </main>
+</body>
+</html>

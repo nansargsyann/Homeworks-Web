@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio tag</title>
+    <style>
+      header{
+        justify-content: center;
+      }
+      main{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .audios{
+          text-align: center;
+          border: 2px double grey;
+          padding: 10px;
+          width: 250px;
+          float: left;
+      }
+  </style>
+</head>
+<body>
+    <header><h1>Today's top hit:</h1>
+    <h2>Harry Styles, As It Was</h2></header>
+    <main>
+    <figure class="audios">
+      <audio controls>
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N1:controls</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio controls muted>
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N2:muted</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio controls loop>
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N3:loop</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio controls>
+        <source src="./As It Was.mp3" type="audio/ogg">
+      </audio>
+      <figcaption>N4:Wrong type for safari</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio controls autoplay>
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N5:autoplay</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio controls preload="none">
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N6:preload none</figcaption>
+    </figure>
+    <figure class="audios">
+      <audio>
+        <source src="./As It Was.mp3" type="audio/mp3">
+      </audio>
+      <figcaption>N7:Without controls</figcaption>
+    </figure>
+  </main>
+</body>
+</html>

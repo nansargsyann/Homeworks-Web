@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_1_1</title>
+    <link rel="icon" type="image/png" href="./img/books.png">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body{
+            background-color: rgb(218, 165, 32, 0.15);
+        }
+        nav{
+            border: solid green 1px;
+        }
+        a:link{
+          color: green;
+          text-decoration: none;
+        }
+        .navlinks{
+            float: right;
+            font-size: 23px;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./img/Green Book Butterfly Book Club Logo.png" alt="logo" style="width: 150px; height: 150px; border: double green;">
+        <div class="navlinks">
+        <a href="#">Home <br></a>
+        <a href="#">About us <br></a>
+        <a href="#">News <br></a>
+        <a href="#">How to order? <br></a>
+    </div>
+    </nav>
+    <aside style="float: left;">
+        <br> Subscribe for our newsletter!!! <br>
+        <input type="email" placeholder="Email address">
+        <input type="submit" value="Submit">
+    </aside>
+    <fieldset>
+        <legend> <h2> Search for books </h2></legend>
+        <form>
+            <label for="title">Title</label>
+            <input type="text" id="title">
+            <label for="author">Author</label> 
+            <input type="text" id="author">
+            <label for="code">Code</label> 
+            <input type="text" id="code"> <br>
+            <label for="publish">Publication year</label>
+            <select id="publish">
+                <option value="202022">2020-2022</option>
+                <option value="201020">2010-2020</option>
+                <option value="200010">2000-2010</option>
+                <option value="1990">1990-2000</option>
+                <option value="198090">1980-1990</option>
+                <option value="197080">1970-1980</option>
+            </select>
+            <input type="submit" value="Search">
+        </form>
+    </fieldset>
+    <details>
+        <summary>Categories</summary>
+        <ul>
+            <li><a href="#">Children's Books</a></li>
+            <li><a href="#">Literature & Fiction</a></li>
+            <li><a href="#">Reference</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Cookbooks</a></li>
+            <li>Try</li>
+        </ul>
+    </details>
+    <div>
+        <p>Online Armenian Store - Buy Armenian Books Online</p>
+        <p>The Largest Armenian Book Store Online. Shipping worldwide from Armenia and US</p>
+        <p>Buy Armenian Books from the oldest and largest Online Armenian Store and have them shipped to any place of the world.</p> <hr>
+    </div>
+    <figure>
+        <img src="./img/peterpan.webp" alt="Peter Pan" width="200px">
+        <figcaption> <a href="#">James Matthew Barrie - Peter Pan</a> <br>
+        Price: $19.99 <br>
+        <a href="#peterpan">Description</a></figcaption>
+    </figure>
+    <figure>
+        <img src="./img/the_world_of_yester.webp" alt="The World of Yesterday" width="200px">
+        <figcaption> <a href="#">Stefan Zweig - The World of Yesterday: Memoires of a European</a> <br>
+        Price: $29.99 <br>
+        <a href="#theworld">Description</a></figcaption>
+    </figure>
+    <figure>
+        <img src="./img/the_murder_on_the_links.webp" alt="The Murder on The Links" width="200px">
+        <figcaption> <a href="#">Agatha Christie - The Murder on The Links</a> <br>
+        Price: $24.99 <br>
+        <a href="#themurder">Description</a></figcaption>
+    </figure>
+    <figure>
+        <img src="./img/Albcam_therebel.webp" alt="The Rebel" width="200px">
+        <figcaption> <a href="#">Albert Camus - The Rebel</a> <br>
+        Price: $32.99 <br>
+        <a href="#therebel">Description</a></figcaption>
+    </figure>
+    <section id="peterpan">
+        <h3>Peter Pan</h3>
+        <p>Peter and Wendy (1911) is Barry's most famous work. The latter was first written as a play (1906) and staged at the Duke of York Theater in London, with great success. It is not by chance that the novel is distinguished by subtle theatricality and exceptional elaboration of dialogues. Who is Peter Pan? Good-looking, gifted young man, resourceful and brave, a light! no, incredibly boastful. In short, the best of the boys.</p>
+    </section>
+    <section id="theworld">
+        <h3>The World of Yesterday: Memoires of a European</h3>
+        <p>The World of Yesterday, mailed to his publisher a few days before Stefan Zweig took his life in 1942, has become a classic of the memoir genre. Originally titled “Three Lives,” the memoir describes Vienna of the late Austro-Hungarian Empire, the world between the two world wars and the Hitler years.</p>
+    </section>
+    <section id="themurder">
+        <h3>The Murder on The Links</h3>
+        <p>The Murder on the Links is the third book of detective fiction by Agatha Christie and one of her most famous works. The novel was first published in 1923, in the UK. An urgent letter from a wealthy man, named Paul Renauld, brings Hercule Poirot to France. But on his arrival, the renowned detective finds that his client is dead and his brutally stabbed body now lies face downwards in a shallow grave on a golf course.</p>
+    </section>
+    <section id="therebel">
+        <h3>The Rebel</h3>
+        <p>"The Rebel" philosophical essay is an attempt to discover the essence of man, which is played out in the focus of the encounter of eternity and historical time, in the turning points of the socio-political upheavals, civilizations and epochs of earthly humanity. This essay is also a desperate cry against the pessimism of the future of mankind. The ideas mentioned in it are in line with the concerns of his great predecessors and contemporaries, why not also the successors.</p>
+    </section>
+    <footer>
+       <a href="#"><input type="button" value="1"></a>
+       <a href="#"><input type="button" value="2"></a>
+       <a href="#"><input type="button" value="3"></a>
+       <a href="#"><input type="button" value="4"></a>
+    </footer>
+</body>
+</html>

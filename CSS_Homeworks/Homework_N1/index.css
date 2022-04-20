@@ -1,0 +1,37 @@
+summary{
+    font-size: x-large;
+    color: #daa520;
+}
+figure{
+    text-align: center;
+    border: 2px inset green;
+    padding: 5px;
+    margin: 30px;
+    width: 250px;
+    height: 380px;
+    float: left;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+}
+/* Grouping Selector + Inheritance */
+ul, h2
+{
+    color: goldenrod;
+}
+/* Inheritance */
+/* 1 example */
+#peterpan {
+    color: #663300;
+}
+/* 2 example */
+#theworld p{
+    color: #669900;
+}
+/* Mix of grouping selector and inheritance */
+#themurder, #therebel {
+    color: #cc6600;
+}
+

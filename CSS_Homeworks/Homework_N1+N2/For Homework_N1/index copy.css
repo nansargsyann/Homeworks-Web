@@ -1,0 +1,72 @@
+body{
+    color: blue;
+    font-size: 15px;
+}
+nav{
+    float: right;
+    font-size: 14px;
+}
+aside{
+    color: black;
+    font-style: italic;
+    float: left;
+    border-right: 1px solid blue;
+    height: 1000px;
+    width: 160px;
+}
+aside h3 {
+    color: red;
+    font-size: 17px;
+    font-weight: 200;
+}
+aside div h3{
+    color: orange;
+    font-size: 15px;
+    font-weight: 100;
+}
+aside div a:link{
+    color: purple;
+    font-size: 13px;
+}
+a:link{
+    text-decoration: none;
+    color: palevioletred;
+}
+main{
+    text-align: justify;
+    color: crimson;
+    font-weight: 200;
+}
+main section{
+    font-weight: 300;
+}
+main p{
+    color: darkgreen;
+    font-size: 20px;
+    font-weight: 400;
+}
+ main .par{
+     color: fuchsia;
+     font-size: 16px;
+     font-weight: 200;
+ }
+ main ol{
+     color: black;
+     font-weight: 400;
+     font-size: smaller;
+ }
+ main ol li{
+     color: seagreen;
+     font-weight: 500;
+     font-size: 30px;
+ }
+ main ol .first{
+     color: midnightblue;
+     font-weight: 500;
+     font-size: 20px;
+ }
+main ol .first #second{
+    color: lawngreen;
+    font-weight: 200;
+    font-size: x-large;
+}

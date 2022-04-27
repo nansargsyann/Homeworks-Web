@@ -1,0 +1,122 @@
+body{
+    background-color: #EAEEE9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 20px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+nav
+{   
+    box-sizing: border-box;
+    margin: 20px 35px;
+    background-color: white;
+    min-width: 800px;
+    max-width: 100%;
+}
+#first{
+    display: block;
+    box-sizing: border-box;
+    background-color: #f7f8f3;
+}
+#first div{
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.2;
+    color: #2C3E50;
+}
+.mainphoto img{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+input{
+    width: 350px;
+    height: 25px;
+    background-color: rgb(153, 153, 204, 0.05);
+    border: none;
+}
+#submit{
+    width: 100px;
+    background-color: #71DDA1;
+    color: white;
+}
+nav div{
+    float: right;
+    line-height: 70px;
+}
+.prem{
+    box-sizing: border-box;
+    width: 800px;
+    height: 300px;
+    background-color: rgb(153,153,204, 0.25);
+    text-align: left;
+    margin-top: auto;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    border: 3px solid rgb(153, 153, 204);
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    font-size: 25px;
+}
+.caps{
+    color: orange;
+    font-variant: small-caps;
+}
+#second figure
+{
+    width: 400px;
+    height: 300px;
+    border: 2px solid orange;
+    padding: 20px 5px 25px 5px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 5px;
+}
+figure img{
+    width: 270px;
+    padding: 7px 70px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main span{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+}
+.bold{
+    font-size: 30px;
+    font-weight: 600;
+}
+.reviews{
+    margin: 30px;
+    border: 1px double green;
+    padding: 10px;
+    width: 600px;
+    max-width: 700px;
+    min-width: 500px;
+    min-height: min-content;
+    line-height: 35px;
+    background-color: #D5F5E3;
+}
+ul{
+    padding: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+.franchise{
+    display: inline;
+}
+.ourstory{
+    display: inline-block;
+    background-color: #D4EFDF;
+    width: 500px;
+    max-height: max-content;
+}

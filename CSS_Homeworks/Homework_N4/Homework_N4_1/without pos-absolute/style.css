@@ -1,0 +1,95 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #FBF0FE;
+}
+header{
+    position: sticky;
+    top: 0;
+    margin: 20px;
+    border: 2px solid palevioletred;
+    height: 250px;
+    background-image: url(./img/watercolor.png);
+}
+header img{
+    display: inline-block;
+    margin: 25px;
+}
+header nav{
+    display: inline-block;
+    margin-bottom: 220px;
+    margin-left: 140px;
+    vertical-align: middle;
+    font-size: 30px;
+}
+header nav a:link{
+    text-decoration: none;
+    color: purple;
+}
+main .title{
+    border: 2px solid purple;
+    background-image: url(./img/leaves.png);
+    margin: 20px;
+    text-align: center;
+    font-family: buttershine;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+}
+main .title h1{
+    text-align: center;
+    font-size: 80px;
+    color: purple;
+}
+main section{
+    display: table;
+    width: 100%;
+}
+main section .main1{
+    display: table-row;
+    height: 300px;
+}
+main section .main1 .first{
+    display: table-cell;
+    width: 50%;
+    height: 300px;
+    border: 1px solid pink;
+    background-color: #FDE1EA;
+}
+main section .main1 .first h2{
+    font-family: buttershine;
+    font-size: 50px;
+    line-height: 10px;
+}
+main section .main1 .second{
+    display: table-cell;
+    width: 50%;
+    height: 300px;
+    background-image: url(./img/strawberry.png);
+    background-repeat: no-repeat;
+    border: 1px solid navy;
+}
+main section .main2{
+    display: table-row;
+}
+main section .main2 .third{
+    display: table-cell;
+    width: 50%;
+    height: 300px;
+    background-image: url(./img/blueberries.jpeg);
+    background-repeat: no-repeat;
+    border: 1px solid palevioletred;
+}
+main section .main2 .fourth h2{
+    font-family: buttershine;
+    font-size: 50px;
+    line-height: 10px;
+}
+main section .main2 .fourth{
+    display: table-cell;
+    width: 50%;
+    height: 300px;
+    border: 1px solid purple;
+    font-size: 15px;
+    background-color: #E1E6FD;
+}

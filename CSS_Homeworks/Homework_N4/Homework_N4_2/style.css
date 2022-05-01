@@ -1,0 +1,128 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+.first{
+    position: relative;
+    top: 5px;
+    bottom: 20px;
+    width: 700px;
+    height: 400px;
+    background-color: darkgoldenrod;
+}
+.first .child1{
+    position: absolute;
+    width: 30%;
+    height: 76px;
+    top: 175px;
+    bottom: 175px;
+    left: 9px;
+    right: auto;
+    border: 4px solid white;
+    background-color: #E01DD0;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+}
+.first .child2{
+    position: absolute;
+    width: 30%;
+    height: 76px;
+    top: 145px;
+    bottom: 145px;
+    left: calc(9px + 25%);
+    border: 4px solid #8A1A8E;
+    background-color: #E01DD0;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+}
+.first .child3{
+    position: absolute;
+    width: 30%;
+    height: 76px;
+    top: 175px;
+    right: 9px;
+    bottom: 175px;
+    border: 4px solid white;
+    background-color: #E01DD0;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+}
+.second{
+    position: relative;
+    top: 20px;
+}
+
+.second .purple{
+    position: absolute;
+    background-color: purple;
+    width: 700px;
+    height: 580px;
+}
+.second .pink{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50px;
+    background-color: #E01DD0;
+    width: 600px;
+    height: 500px;
+}
+.second .yellow{
+    position: absolute;
+    top: 0;
+    bottom: 200px;
+    left: 100px;
+    background-color: yellow;
+    color: black;
+    border: 5px dotted black;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-size: 70px;
+    line-height: 300px;
+}
+
+.third{
+    position: relative;
+    top: 600px;
+}
+.third .parent{
+    position: absolute;
+    top: 0;
+    width: 700px;
+    height: 600px;
+    background-color: #FAE5D3;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 250px;
+    font-size: 35px;
+}
+.third .child{
+    position: absolute;
+    top: 170px;
+    bottom: 20px;
+    left: 50px;
+    width: 600px;
+    height: 370px;
+    background-color: green;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 245px;
+    font-size: 35px;
+}
+.third .element{
+    position: absolute;
+    top: 340px;
+    bottom: 20px;
+    left: 100px;
+    width: 500px;
+    height: 145px;
+    background-color: yellow;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 145px;
+    font-size: 35px;
+}

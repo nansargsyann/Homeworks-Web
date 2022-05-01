@@ -1,0 +1,96 @@
+.container{
+    display: table;
+    width: 100%;
+}
+.table-row{
+    display: table-row;
+    height: 20px;
+}
+.table-cell{
+    display: table-cell;
+    width: 50%;
+    background-color: #EAECEE;
+    line-height: 1px;
+}
+.table-cell input{
+    width: 93%;
+    height: 20px;
+}
+.table-cell p{
+    font-size: 25px;
+    color: navy;
+    margin-bottom: 13px;
+}
+main{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #EAECEE;
+    border: 1px solid gray;
+    width: 100%;
+    height: 900px;
+}
+main .text{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    text-align: left;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+main .text h1{
+    font-size: 40px;
+}
+main .text p{
+    font-size: 25px;
+}
+main form{
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    width: 100%;
+}
+main form label{
+    display: block;
+    margin-bottom: 10px;
+    width: 93%;
+}
+main form label span{
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: navy;
+} 
+main form label input{
+    width: 100%;
+    padding: 10px;
+}
+main form label textarea{
+    padding: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    height: 180px;
+}
+input, textarea{
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+input:focus, textarea:focus{
+    border: 5px dotted navy;
+    border-radius: 10px;
+    outline: none;
+}
+form #sub{
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    padding: 3px 20px;
+    cursor: pointer;
+    width: 220px;
+    height: 45px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+form #sub:hover{
+    background-color: aliceblue;
+    color: navy;
+}

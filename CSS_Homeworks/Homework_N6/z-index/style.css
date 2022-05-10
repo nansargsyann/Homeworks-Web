@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+.parent{
+    position: relative;
+}
+div[class*="control"]{
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.control1{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: red;
+}
+.control2{
+    margin-top: 55px;
+    margin-left: 55px;
+    background-color: green;
+}
+.control3{
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: blue;
+}
+.control4{
+    margin-top: 145px;
+    margin-left: 145px;
+    background-color: #FA04DC;
+}
+.control5{
+    margin-top: 190px;
+    margin-left: 190px;
+    background-color: #D40B4B;
+}
+.control6{
+    margin-top: 235px;
+    margin-left: 235px;
+    background-color: #BE0AF4;
+    z-index: 1;
+}
+.control7{
+    margin-top: 280px;
+    margin-left: 280px;
+    background-color: #F0821C;
+}

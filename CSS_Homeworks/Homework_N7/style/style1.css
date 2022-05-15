@@ -1,0 +1,54 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.bio{
+    height: 1000px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.bio .title{
+    position: absolute;
+    width: 200px;
+    height: 1000px;
+    line-height: 100px;
+    background-image: radial-gradient(circle, rgba(125, 145, 185, 0.8) 56%, rgb(34, 54, 131) 100%);
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    padding-top: 50px;
+}
+
+.bio .info{
+    position: absolute;
+    left: 200px;
+    width: max(90%, 2100px);
+    border: 1px solid navy;
+    background-image: conic-gradient(rgba(128, 0, 128, 0.5), rgba(255, 192, 203, 0.5), rgba(0, 0, 255, 0.5));
+    word-break: break-all;
+    min-height: 850px;
+}
+.bio .info img{
+    margin: 10px;
+    padding: 10px;
+}
+.bio .info p, .science .info1 p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.science .title{
+    width: 100%;
+    height: 180px;
+    background-image: radial-gradient(circle, rgba(125, 145, 185, 0.8) 56%, rgb(34, 54, 131) 100%);
+    font-size: 40px;
+    writing-mode: horizontal-bt;
+    padding-top: 50px;
+}
+.science .info1{
+    width: max(100%, 2100px);
+    border: 1px solid navy;
+    word-break: keep-all;
+    background-image: conic-gradient(from 45deg at 50% 30%, rgba(128, 0, 128, 0.5), rgba(255, 192, 203, 0.5), rgba(0, 0, 255, 0.5));
+}

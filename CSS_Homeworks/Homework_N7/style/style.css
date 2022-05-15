@@ -1,0 +1,182 @@
+body{
+    margin: 0 auto;
+    min-width: 1750px;
+}
+*{
+    box-sizing: border-box;
+}
+header a:link, header a:visited{
+    color: #002147;
+    text-decoration: none;
+}
+header .link{
+    position: relative;
+}
+header .link::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color:#002147;
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease;
+    }
+
+header .link:hover::after{
+        transform: scaleX(1);
+}
+header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+header .left{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 30%;
+    height: 200px;
+}
+header .left img{
+    position: absolute;
+    top: 5px;
+}
+header .left a div{
+    position: absolute;
+    top: 23px;
+    left: 170px;
+    width: 270px;
+    text-align: left;
+    font-size: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #002147;
+    font-weight: 600;
+}
+
+header nav{
+    position: absolute;
+    right: 10px;
+    width: 50%;
+    height: 200px;
+    text-align: right;
+    line-height: 200px;
+    font-size: 50px;
+}
+
+main .nav2{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(166deg, rgb(0,33,71) 40%, rgb(0,212,255) 100%);
+    text-align: center;
+    font-size: 45px;
+}
+
+main .nav2 ul li{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+main .nav2 a:link, main .nav2 a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+main .maininfo{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-image: linear-gradient(270deg, rgba(138,144,153, 0.4) 32%, rgba(255,255,255) 100%);
+}
+
+main .maininfo .news{
+    display: inline-block;
+    width: 40%;
+    margin-left: 100px;
+}
+main .maininfo h3{
+    font-size: 40px;
+}
+main .maininfo h4{
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+main .maininfo .news div{
+    width: 700px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 40px;
+    background-image: radial-gradient(circle, rgba(147,152,230,0.5) 55%, rgba(65,178,244,0.5) 100%);
+}
+main .maininfo .anons div{
+    width: 700px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 40px;
+    background-image: conic-gradient(from 180deg at 50% 50%, #9fbee0, #a3b7e7, #a7b0ec, #b1adf2, #c3b3f6, #d4b9fa, #e5c1fd, #f3c9ff);
+}
+main .maininfo .news div p, main .maininfo .anons div p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 30px;
+}
+main .maininfo .anons{
+    display: inline-block;
+    width: 45%;
+}
+
+main .course{
+    margin-top: 50px;
+}
+
+main .course div{
+    width: 100%;
+    height: 65px;
+    font-size: 40px;
+    color: white;
+    background-image: linear-gradient(166deg, rgb(0,33,71) 40%, rgb(0,212,255) 100%);
+}
+
+main .course figure{
+    display: inline-block;
+    width: 600px;
+    height: 4px;
+    box-shadow: 5px 5px 30px gray;
+    font-size: 30px;
+}
+
+main .course figure img{
+    height: 300px;
+}
+
+main .course .course1{
+    filter: grayscale(70%);
+}
+
+main .course .course2 img{
+    filter: blur(2px);
+}
+
+main .course .course3{
+    filter: sepia(0.8);
+}
+
+main .course .course4 img{
+    filter: invert(1);
+}
+
+main .course .course5{
+    filter: contrast(30);
+}

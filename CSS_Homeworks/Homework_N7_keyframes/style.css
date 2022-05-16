@@ -1,0 +1,73 @@
+body{
+    position: relative;
+    background-color: aliceblue;
+}
+.box{
+    width: 85%;
+    height: 100px;
+    /* background: slateblue; */
+    background-color: #4933FF;
+    padding: 8px;
+    color: white;
+    text-align: right;
+    line-height: 100px;
+    font-size: 50px;
+    font-variant: small-caps;
+    animation: slide-in 5s;
+}
+
+@keyframes slide-in {
+    from {
+    transform: translateX(-100%);
+    }
+    to {
+    transform: translateX(0%);
+    }
+}
+
+.yerevan .imgyerevan{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    background-image: url(./img/yerevan1.jpg);
+    animation: mymove 20s infinite;
+  }
+.divyerevan{
+    position: absolute;
+    top: 500px;
+    right: 450px;
+    left: 450px;
+    width: 1550px;
+    height: 600px;
+    font-size: 40px;
+    box-shadow: 5px 5px 20px gray;
+}
+  @keyframes mymove {
+    0%{
+        top: 150px;
+        left: 0;
+        background-image: url(./img/yerevan1.jpg);
+    }
+    25%{
+        top: 150px;
+        left: 2018px;
+        background-image: url(./img/yerevan2.jpeg);
+    }
+    50%{
+        top: 1100px;
+        left: 2018px;
+        background-image: url(./img/yerevan3.jpeg);
+    }
+    75%{
+        top: 1100px;
+        left: 0px;
+        background-image: url(./img/yerevan4.jpeg);
+    }
+    100%{
+        top: 150px;
+        left: 0px;
+        background-image: url(./img/yerevan1.jpg);
+    }
+  }
+
+ 

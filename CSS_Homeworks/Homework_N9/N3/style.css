@@ -1,0 +1,42 @@
+.all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-row-gap: 3px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: orange;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.sidebar{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: pink;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: green;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+}

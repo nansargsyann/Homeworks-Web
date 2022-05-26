@@ -1,0 +1,15 @@
+.main{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+div[class *= child]{
+    background-color: orange;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px gray;
+}

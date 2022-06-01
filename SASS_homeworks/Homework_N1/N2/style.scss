@@ -1,0 +1,26 @@
+@mixin paddheight {
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    nav{
+        width: 25%;
+        min-width: 100px;
+        background-color: black;
+        color: gray;
+        ul{
+            @include paddheight;
+            li{
+                list-style: none;
+            }
+        }   
+    }
+
+    main{
+        @include paddheight;
+        width: 75%;
+    }
+}

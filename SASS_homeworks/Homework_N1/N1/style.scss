@@ -1,0 +1,42 @@
+body{
+    display: flex;
+
+    aside{
+        position: sticky;
+        top: 30px;
+        left: 0;
+        height: 250px;
+
+        div{
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            background-color: white;
+        }
+
+        .fb{
+            background-image: url(./img/fb.png);
+        }
+
+        .twitter{
+            background-image: url(./img/twitter.png);
+        }
+
+        .google{
+            background-image: url(./img/google.png);
+        }
+
+        .linkedin{
+            background-image: url(./img/linkedin.png);
+        }
+
+        .utube{
+            background-image: url(./img/utube.png);
+        }
+    }
+
+    main{
+       padding-left: 15px;
+   }
+}
+

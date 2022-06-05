@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+$back-color:(
+    "pinkhot": #DE3163,
+    "bluelight": #6495ED,
+    "laven": #CCCCFF,
+    "turqu": #40E0D0,
+    "dark": black,
+    "light": white,
+    );
+
+@mixin color-radius($rad-value, $color-value, $text-value){
+    border-radius: $rad-value;
+    background-color: map-get($back-color, $color-value);
+    color: map-get($back-color, $text-value);
+}
+
+@mixin flexstand{
+    display: flex;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    position: relative;
+    min-width: 433px;
+
+    .first{
+        @include flexstand;
+        justify-content: space-evenly;
+        height: 100px;
+
+        .choose{
+            @include flexstand;
+            @include color-radius(20px, bluelight, light);
+            justify-content: space-around;
+            width: 200px;
+            height: 50px;
+
+            .month{
+                @include flexstand;
+                @include color-radius(20px, pinkhot, light);
+                justify-content: center;
+                width: 100px;
+                height: 40px;
+            }
+
+            .month:hover{
+                cursor: pointer;
+            }
+
+            .yearly{
+                align-self: center;
+            }
+        }
+        
+    }
+
+
+    .plans{
+        @include flexstand;
+        justify-content: center;
+        margin-top: 20px;
+
+        .table{
+            width: 300px;
+            height: 450px;
+            padding-top: 20px;
+            padding-left: 30px;
+            background-color: rgba(128, 128, 128, 0.288);
+            background-image: url(./bg-shape1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .price-cont{
+                @include flexstand;
+
+                .price{
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+
+            ul {
+                list-style: none;
+                line-height: 30px;
+                padding: 0;
+
+                li{
+                    @include flexstand;
+                    &::before{
+                        content: url(./check-icon.svg);
+                        margin-right: 15px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            button{
+                @include color-radius(20px, bluelight, light);
+                width: 150px;
+                height: 50px;
+                font-size: 17px;
+                border: none;
+
+                &:hover{
+                    @include color-radius(20px, turqu, light);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .table:nth-child(2){
+            @include color-radius(20px, bluelight, light);
+            position: relative;
+            height: 500px;
+            padding-top: 45px;
+
+            .header{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 40px;
+                background-color: #DE3163;
+                text-align: center;
+                line-height: 40px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+            }
+            button{
+                @include color-radius(20px, pinkhot, light);
+
+                &:hover{
+                    @include color-radius(20px, laven, dark);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 835px){
+    .plans{
+        flex-direction: column;
+    }
+
+    .table{
+        margin-bottom: 20px;
+    }
+}

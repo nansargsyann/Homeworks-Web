@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  position: relative;
+  min-width: 433px;
+}
+
+main .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100px;
+}
+
+main .first .choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: #6495ED;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+  height: 50px;
+}
+
+main .first .choose .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: #DE3163;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 40px;
+}
+
+main .first .choose .month:hover {
+  cursor: pointer;
+}
+
+main .first .choose .yearly {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+main .plans .table {
+  width: 300px;
+  height: 450px;
+  padding-top: 20px;
+  padding-left: 30px;
+  background-color: rgba(128, 128, 128, 0.288);
+  background-image: url(./bg-shape1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .plans .table .price-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .plans .table .price-cont .price {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+main .plans .table ul {
+  list-style: none;
+  line-height: 30px;
+  padding: 0;
+}
+
+main .plans .table ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .plans .table ul li::before {
+  content: url(./check-icon.svg);
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+main .plans .table button {
+  border-radius: 20px;
+  background-color: #6495ED;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+}
+
+main .plans .table button:hover {
+  border-radius: 20px;
+  background-color: #40E0D0;
+  color: white;
+  cursor: pointer;
+}
+
+main .plans .table:nth-child(2) {
+  border-radius: 20px;
+  background-color: #6495ED;
+  color: white;
+  position: relative;
+  height: 500px;
+  padding-top: 45px;
+}
+
+main .plans .table:nth-child(2) .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #DE3163;
+  text-align: center;
+  line-height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+main .plans .table:nth-child(2) button {
+  border-radius: 20px;
+  background-color: #DE3163;
+  color: white;
+}
+
+main .plans .table:nth-child(2) button:hover {
+  border-radius: 20px;
+  background-color: #CCCCFF;
+  color: black;
+}
+
+@media screen and (max-width: 835px) {
+  .plans {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .table {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+
+
+@mixin flexstand($just-cont-value){
+    display: flex;
+    align-items: center;
+    justify-content: $just-cont-value;
+}
+
+@mixin forlinks{
+    text-decoration: none;
+    color: $color-body;
+}
+
+@mixin button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    // width: 20rem;
+    // height: 5rem;
+}
+
+
+@mixin tabletphone{
+    .header__container{
+        .header__container--right{
+           visibility: hidden; //false
+        //    display: none;
+            .menu{
+                visibility: visible !important;
+            }
+        }
+    }
+    .page1{
+        position: relative;
+        flex-direction: column;
+        .page1__left{
+            // position: absolute;
+            // top: 0;
+            text-align: center;
+            // .btns{
+            //     justify-content: center; doesn't working
+            // }
+        }
+        .page1__right{
+            margin: 3rem;
+        }
+    }
+
+    .page2{
+        height: max-content;
+        flex-direction: column;
+
+        .page2__img{
+            order: -1;
+        }
+        .page2__down{
+            order: 0;
+        }
+        .page2__text{
+            order: 1;
+            min-width: 80%;
+        }
+    }
+
+    .page3{
+        .page3_container{
+            flex-wrap: wrap;
+            .page3__left{
+                .page3__left__info{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

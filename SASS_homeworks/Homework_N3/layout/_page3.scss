@@ -1,0 +1,66 @@
+.page3{
+    padding-bottom: 4rem;
+    // height: 100vh;
+    h3{
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 110%;
+        color: $color-primary;
+    }
+    .info, .date{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .date{
+        font-style: italic;
+    }
+
+    .page3__header{
+        margin: 7rem 5rem;
+        h2{
+            font-family: 'Libre Baskerville';
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 110%;
+            text-transform: capitalize;
+            color: $color-header-text;
+        }
+    }
+    .page3_container{
+        @include flexstand(center);
+        .page3__left{
+            // width: 40%;
+            margin: 0 2rem;
+            // @include flexstand;
+            // flex-wrap: wrap;
+            
+        }
+        .page3__right{
+            margin: 0;
+            @include flexstand(center);
+            flex-direction: column;
+            gap: 3rem;
+
+            .page3_right_row{
+                position: relative;
+                @include flexstand(center);
+                gap: 1rem;
+            }
+            .page3_right_row:after {
+                content: '';
+                position: absolute;
+                border: 1px solid $color-light-gray;
+                bottom: -20px; 
+                width: 100%; 
+              }
+              
+              .page3_right_row:last-child:after {
+                display: none;
+              }
+        }
+    }
+}

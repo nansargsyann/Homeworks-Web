@@ -1,0 +1,49 @@
+
+.page2{
+    background: $color-header-text;
+    background-image: url(./img/page2/background.png);
+    background-position: right bottom;
+    
+    background-repeat: no-repeat;
+    // height: 100vh;
+    .page2__container{
+        @include flexstand(space-evenly);
+        margin: 5rem 6rem;
+        padding: 3rem;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(2, 50vh);
+        // grid-column-gap: 2rem;
+        .page2__text{
+            width: 40%;
+            color: $color-light;
+            h2{
+                font-family: 'Libre Baskerville';
+                font-weight: 400;
+                font-size: 45px;
+                line-height: 110%;
+                text-transform: capitalize;
+            }
+            p{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+            }
+            button{
+                @include button;
+                margin-top: 2rem;
+                background-color: transparent;
+                border: 1px solid $color-light;
+                color: $color-light;
+            }
+        }
+        .page2__down{
+            margin: 2rem;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

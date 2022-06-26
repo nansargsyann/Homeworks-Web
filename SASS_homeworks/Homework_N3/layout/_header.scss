@@ -1,0 +1,50 @@
+@media screen and (min-width: 750px) and (max-width: 1160px) {
+    @include tabletphone;
+}
+
+@media screen and (max-width: 749px){
+    @include tabletphone;
+    .page3_right_row{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column; //doesn't working
+    }
+}
+
+.header__container{
+    @include flexstand(space-around);
+    margin-top: 2rem;
+    .header__container--right{
+        @include flexstand(space-between);
+        font-size: 1.4rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        width: 60%;
+        a:link, a:visited, a:hover{
+            @include forlinks;
+            text-transform: uppercase;
+        }
+
+        .btn{
+            @include button;
+            background-color: $color-light;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+
+        }
+        .menu{
+            width: 3.5rem;
+            visibility: hidden;
+        }
+    }
+}
+
+
+
+

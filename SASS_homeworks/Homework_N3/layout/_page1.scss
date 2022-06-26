@@ -1,0 +1,49 @@
+.page1{
+    // height: 100vh;
+    @include flexstand(space-evenly);
+    margin-top: 2rem;
+    .page1__left{
+        width: 60rem;
+        h1{
+            font-family: 'Libre Baskerville';
+            font-weight: 400;
+            font-size: 57px;
+            line-height: 110%;
+            text-transform: capitalize;
+            color: $color-header-text;
+            // text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        p{
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 150%;
+            text-transform: capitalize;
+        }
+
+        .btns{
+            @include flexstand(flex-start);
+            gap: 10px;
+            margin-top: 2rem;
+            .btn{
+                @include button;
+            }
+            .btn:hover{
+                cursor: pointer;
+            }
+            .btn--buy{
+                color: white;
+                border: 1px solid $color-primary;
+                background-color: $color-primary;
+            }
+
+            .btn--more{
+                color: $color-primary;
+                background-color: $color-light;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+}
